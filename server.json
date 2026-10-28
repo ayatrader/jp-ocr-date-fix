@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ayatrader/jp-ocr-date-fix",
+  "title": "JP OCR Date Fix",
+  "description": "Repair Japanese dates broken by OCR (今和→令和) and keep only fixes valid on the calendar.",
+  "repository": {
+    "url": "https://github.com/ayatrader/jp-ocr-date-fix",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "jp-ocr-date-fix",
+      "version": "0.1.0",
+      "runtimeHint": "uvx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
