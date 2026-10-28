@@ -1,0 +1,2 @@
+[console_scripts]
+jp-ocr-date-fix = jpocrdate.server:main
