@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jp-ocr-date-fix"
+version = "0.1.0"
+description = "Repair Japanese dates broken by OCR (今和→令和) and keep only fixes valid on the calendar."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "NEXUS tools" }]
+keywords = ["mcp", "mcp-server", "japanese", "ai-agents"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Natural Language :: Japanese",
+  "Topic :: Text Processing :: Linguistic",
+]
+dependencies = []
+
+[project.scripts]
+jp-ocr-date-fix = "jpocrdate.server:main"
+
+[project.urls]
+Homepage = "https://github.com/ayatrader/jp-ocr-date-fix"
+Source = "https://github.com/ayatrader/jp-ocr-date-fix"
+
+[tool.setuptools]
+packages = ["jpocrdate"]
