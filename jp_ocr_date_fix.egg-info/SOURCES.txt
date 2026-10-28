@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+jp_ocr_date_fix.egg-info/PKG-INFO
+jp_ocr_date_fix.egg-info/SOURCES.txt
+jp_ocr_date_fix.egg-info/dependency_links.txt
+jp_ocr_date_fix.egg-info/entry_points.txt
+jp_ocr_date_fix.egg-info/top_level.txt
+jpocrdate/__init__.py
+jpocrdate/__main__.py
+jpocrdate/fix.py
+jpocrdate/server.py
+tests/test_jpocrdate.py
