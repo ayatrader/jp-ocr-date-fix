@@ -1,0 +1,7 @@
+# JP OCR Date Fix
+
+> Repairs Japanese dates broken by OCR (今和→令和, 曰→日, O→0, l→1) and keeps a fix only when the date exists on the calendar and inside its era (明治–令和). Unconfirmed spans are returned as flags, never guessed. Python stdlib, no network, MIT. MCP server included.
+
+- jpocrdate/fix.py: fix_text(text) -> {text, changes, flags}; check_date(s) -> {status: ok|fixed|invalid|not_a_date, date, iso}
+- jpocrdate/server.py: MCP stdio server with tools jp_ocr_fix_dates and jp_ocr_check_date
+- tests/test_jpocrdate.py: 18 tests
