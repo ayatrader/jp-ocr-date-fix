@@ -1,5 +1,7 @@
 # JP OCR Date Fix
 
+<!-- mcp-name: io.github.ayatrader/jp-ocr-date-fix -->
+
 **Repair Japanese dates that OCR broke (`今和6年3月15曰` → `令和6年3月15日`), and only when the calendar confirms the result.**
 
 OCR often misreads the era name 令和 as 今和 or 合和, 日 as 曰, and 0/1 as O/l. One public test of a document parser on Japanese PDFs found the 令→今 error on roughly all OCR-processed pages ([source](https://dev.to/elvisyao007/does-a-chinese-document-parser-actually-work-on-japanese-pdfs-i-measured-it-and-the-answer-is-2f5)). An AI that reads that text then extracts a date that does not exist, or guesses.
